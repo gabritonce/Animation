@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    background-color: #666666;
+    font-family: 'Indie Flower', cursive;
+}
+main{
+    padding-top: 50px;
+}
+h1{
+    font-size: 45px;
+}
+
+p{
+    font-size: 25px;
+}
+#post{
+display: flex;
+flex-wrap: wrap;
+justify-content:center;
+gap: 30px;
+
+}
+main #post div {
+width: 200px;
+padding: 45px;
+border: 1px solid black;
+text-align: center;
+box-shadow: 2px 2px 1px hsl(0, 0%, 0%);
+}
+
+#card-1, #card-5 ,#card-7{
+    background-color: #EBECB8;
+    background: linear-gradient(to bottom, #EBECBB 80%,  rgb(138, 132, 132) );
+    transform: rotate(-5deg);
+}
+
+#card-2, #card-4, #card-8{
+   background-color: #B8DCBA;
+   background: linear-gradient(to bottom,  #B8DCBA 80%, rgb(138, 132, 132));
+   transform: rotate(8deg);
+   
+}
+
+#card-3, #card-6{
+    background-color: #A1A1B7;
+    background: linear-gradient(to bottom,  #A1A1B7 80%, rgb(138, 132, 132));
+    transform: rotate(-7deg);
+    
+}
+
+main #post div:hover{
+    z-index: 1;
+    transform: rotate(0);
+    transform: scale(1.2)
+}
